@@ -120,5 +120,4 @@ ________________________________________________________
 ________________________________________________________
 
 
-## Contact
-[Suhas Suhas](https://www.suhassalian.netlify.com/) - feel free to contact me!
+
