@@ -1,0 +1,43 @@
+.about-hero-txt h1 {
+  font-family: "Poppins";
+  color: #616565;
+}
+.about-hero-sec-container {
+  display: flex;
+  justify-content: center;
+  margin: 8rem 0rem 4rem 0rem;
+}
+.about-hero-txt {
+  width: 40%;
+}
+
+.about-hero-sec {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-hero-txt p {
+  font-family: "Poppins";
+  font-size: 16px;
+  word-spacing: 1px;
+  color: rgb(41, 39, 39);
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+.about-hero-img img {
+  height: 400px;
+  width: 600px;
+  border-radius: 6px;
+}
+.about-hero-txt button {
+  padding: 0.7rem 3rem;
+  background-color: black;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  margin-top: 0.5rem;
+}

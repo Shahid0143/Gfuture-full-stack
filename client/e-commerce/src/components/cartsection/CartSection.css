@@ -1,0 +1,34 @@
+.c-products-main{
+    display: flex;
+    justify-content: center;
+}
+.c-products{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 3rem;
+}
+.c-products p{
+    font-weight: bold;
+}
+.c-items-main{
+    display: flex;
+    justify-content: center;
+}
+.c-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #edf1f4;
+    width: 80%;
+    padding: .5rem;
+    border-radius: 4px;
+    margin-top: 2rem;
+}
+.c-items:hover{
+    background-color: #dfe2e5;
+    cursor: pointer;
+}
+.c-items img{
+    height: 80px;
+}

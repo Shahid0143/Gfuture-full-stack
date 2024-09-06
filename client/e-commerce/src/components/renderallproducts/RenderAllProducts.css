@@ -1,0 +1,86 @@
+.toproducts-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  width: 90%;
+  margin-left: 3rem;
+}
+.mainGrid {
+  display: flex;
+  justify-content: space-evenly;
+}
+.albox {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.albox img {
+  height: 250px;
+}
+.mainHeadingDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+.headingD h1 {
+  font-family: "Poppins";
+  font-size: 24px;
+  color: #18355e;
+}
+.headingD {
+  width: 87%;
+}
+.overlay {
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 1s ease-in-out;
+}
+.overlay-info {
+  display: none;
+}
+
+.albox:hover .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 1s ease-in-out;
+  border-radius: 4px;
+}
+.albox:hover .overlay-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
+}
+
+.overlay-info p {
+  font-family: "Poppins";
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+.overlay-info button {
+  padding: 0.5rem 2rem;
+  border: none;
+  outline: none;
+  background-color: #edf1f4;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.overlay-info button:hover {
+  padding: 0.5rem 2rem;
+  border: none;
+  outline: none;
+  background-color: lightgray;
+  cursor: pointer;
+  border-radius: 4px;
+}

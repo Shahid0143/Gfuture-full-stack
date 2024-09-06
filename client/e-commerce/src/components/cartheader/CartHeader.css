@@ -1,0 +1,14 @@
+.cart-header {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #edf1f4;
+  }
+  .cart-header p {
+    font-family: "Poppins";
+    font-size: 50px;
+    color: #18355e;
+  }
+  

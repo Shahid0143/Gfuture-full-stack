@@ -1,0 +1,19 @@
+.extra-info-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10rem 0rem 6rem 0rem;
+  align-items: center;
+}
+.extra-info {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.extra-info p {
+  width: 75%;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+}

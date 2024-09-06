@@ -1,0 +1,96 @@
+
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+
+.login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+
+.register-btn  {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.register-btn :hover {
+  background-color: #0056b3;
+}
+
+
+.register-btn[disabled] {
+  background-color: #ccc;
+}
+
+
+.register-btn {
+  background-color: #28a745;
+}
+
+.register-btn:hover {
+  background-color: #218838;
+}
+
+
+.message {
+  color: red;
+  margin-top: 15px;
+}
+
+
+@media (max-width: 600px) {
+  .login-box {
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    font-size: 14px;
+  }
+
+  .register-btn  {
+    font-size: 14px;
+  }
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .login-box {
+    width: 100%;
+    max-width: 500px;
+  }
+}
