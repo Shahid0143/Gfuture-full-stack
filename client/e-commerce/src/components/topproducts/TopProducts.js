@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import myJsonData from "../topSearchesData/TopSearchesData.json";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Unstable_Grid2";
@@ -13,12 +12,15 @@ const TopProducts = () => {
   const navigate = useNavigate();
 
   const getData = async () => {
-    const res = await fetch("/addproduct", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const res = await fetch(
+      "https://gfuture-full-stack-1.onrender.com/addproduct",
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     const productD = await res.json();
     setProductData(productD);
@@ -36,7 +38,7 @@ const TopProducts = () => {
     console.log(id);
     navigate(`/singleproduct/${id}`);
   };
-
+  console.log(productData);
   return (
     <>
       {loading ? (

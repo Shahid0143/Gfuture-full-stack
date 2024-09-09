@@ -12,12 +12,15 @@ const RenderAllProducts = () => {
   const navigate = useNavigate();
 
   const getAllData = async () => {
-    const res = await fetch("/addallproduct", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const res = await fetch(
+      "https://gfuture-full-stack-1.onrender.com/addallproduct",
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     const allproductD = await res.json();
     setallProductData(allproductD);
@@ -32,7 +35,7 @@ const RenderAllProducts = () => {
   }, []);
 
   const getRenderAllProductDataId = (id) => {
-    navigate(`/allproduct/${id}`);
+    navigate(`https://gfuture-full-stack-1.onrender.com/allproduct/${id}`);
   };
 
   return (

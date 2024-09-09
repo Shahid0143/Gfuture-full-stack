@@ -10,12 +10,15 @@ const AllSingleProducts = () => {
   const params = useParams();
 
   const getallProductD = async () => {
-    const fetchallD = await fetch(`/addallproduct/${params.id}`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const fetchallD = await fetch(
+      `https://gfuture-full-stack-1.onrender.com/addallproduct/${params.id}`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     const sallData = await fetchallD.json();
     settallSingalData(sallData);

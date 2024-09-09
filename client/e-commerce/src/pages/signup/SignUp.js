@@ -36,7 +36,10 @@ const SignUp = () => {
       setInvalidEmailMsg("");
 
       axios
-        .post(`/api/user/register`, formData)
+        .post(
+          `https://gfuture-full-stack-1.onrender.com/api/user/register`,
+          formData
+        )
         .then((res) => {
           console.log(res.data);
           setAlrt(res.data.message);

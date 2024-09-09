@@ -29,7 +29,7 @@ const Login = () => {
         setLoading(true);
         localStorage.setItem("email", email);
         axios
-          .post(`/api/user/login`, obj)
+          .post(`https://gfuture-full-stack-1.onrender.com/api/user/login`, obj)
           .then((res) => {
             const token = res.data.token;
             if (token) {
